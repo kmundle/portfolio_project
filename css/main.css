@@ -44,15 +44,17 @@ nav ul li:hover, nav ul li:visited, nav ul li:link {
   box-sizing: border-box;
   float: right;
   color: white;
+  padding-right: 1em;
 }
 
 ul {
   text-decoration: none;
   list-style: none;
+  display: flex;
 }
 
 h1{
-  margin: 0 auto;
+  margin: 0;
   font-family: 'Oxygen', sans-serif;
   float: left;
   color: white;
@@ -61,7 +63,7 @@ h1{
   padding-top: .25em;
 }
 
-#name {
+#background {
   background-image: url(/img/self.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -73,6 +75,7 @@ h1{
   align-items: flex-start;
   justify-content: space-between;
   color: white;
+
 }
 
 #Oxford{
@@ -104,19 +107,26 @@ footer {
   right: 0;
   width: auto;
   display: flex;
+  flex-direction: row;
+  padding-left: 1em;
+}
+
+#row {
+  display: flex;
+  flex-direction: column;
 }
 
 .socicon-github:before {
     content: "\e032";
-    color: darkgray;
+    color: white;
 }
 
 .socicon-facebook:before {
     content: "\e028";
-    color: darkgray;
+    color: white;
 }
 
 .socicon-mail:before {
     content: "\e050";
-    color: darkgray;
+    color: white;
 }
