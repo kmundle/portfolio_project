@@ -127,7 +127,12 @@ footer {
     color: white;
 }
 
-.socicon-mail:before {
-    content: "\e050";
+.socicon-linkedin:before {
+    content: "\e04c";
     color: white;
+}
+
+#resume > a{
+  width: 100%;
+  height: 100%;
 }
