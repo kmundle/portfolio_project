@@ -1,13 +1,15 @@
 /* basic reset */
-html, body, h1, h2 {
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
   padding: 0;
   margin: 0;
 }
 
-
 * {
   box-sizing: border-box;
 }
+
 
 a {
   color: white;
@@ -16,6 +18,13 @@ a {
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
+  background-image: url(../img/self.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 50em;
+  width: 100%;
+  height: 100%
 }
 
 nav li{
@@ -26,6 +35,7 @@ nav li{
   color: white;
 }
 
+
 nav ul li:hover, nav ul li:visited, nav ul li:link {
   text-decoration: none;
   color: white;
@@ -35,17 +45,27 @@ nav ul li:hover, nav ul li:visited, nav ul li:link {
   display: flex;
   flex-direction: row;
   color: white;
-
 }
 
-#flexnav {
+/* upper right hand navigation menu */
+
+#localnavigation {
   display: flex;
   justify-content: flex-end;
   box-sizing: border-box;
   float: right;
   color: white;
   padding-right: 1em;
+  width: 50%;
 }
+
+#localnavigation li {
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 1em;
+}
+
 
 ul {
   text-decoration: none;
@@ -53,55 +73,34 @@ ul {
   display: flex;
 }
 
-h1{
-  margin: 0;
-  font-family: 'Oxygen', sans-serif;
-  float: left;
-  color: white;
-  font-size: 4em;
-  padding-left: 1em;
-  padding-top: .25em;
-}
-
+/* the background and every descendent immediately below */
 #background {
-  background-image: url(../img/self.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  height: 100%;
-  min-height: 50em;
-  width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   color: white;
   flex-direction: row-reverse;
-
 }
 
-#Oxford{
-  font-weight: bold;
-  font-size: .65em;
+/* my name at the top */
+h1{
+  margin: 0;
+  font-family: 'Oxygen', sans-serif;
+  float: left;
+  color: white;
+  font-size: 5em;
+  padding-top: .25em;
 }
 
-#instafeed {
+/* my name at the top + the social media icons together in a div */
+#row {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  padding-left: 1em;
+  width: 50%;
 }
 
-#selector{
-  margin: 0 auto;
-  padding: 1em;
-  font-size: 1.5em;
-}
-
-footer {
-  display: flex;
-  align-items: flex-end;
-}
-
+/* social media icons */
 #socialmedia{
   position: fixed;
   bottom: 0;
@@ -109,12 +108,6 @@ footer {
   width: auto;
   display: flex;
   flex-direction: row;
-  padding-left: 1em;
-}
-
-#row {
-  display: flex;
-  flex-direction: column;
 }
 
 .socicon-github:before {
@@ -132,7 +125,57 @@ footer {
     color: white;
 }
 
+/* About page */
+#instafeed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* resume page */
 #resume > a{
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 615px) {
+  /* ... styles here ... */
+body {
+  background-size: cover;
+}
+
+#flexnav {
+  display: flex;
+  flex-direction: column;
+}
+
+#row {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  float: left;
+  width: 100%
+}
+
+#localnavigation {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+#localnavigation li {
+  background-color: white;
+  color: black;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+#background {
+  display: flex;
+  flex-direction: column-reverse;
+}
 }
