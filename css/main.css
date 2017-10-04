@@ -94,7 +94,7 @@ h1{
 }
 
 /* my name at the top + the social media icons together in a div */
-#row {
+#paddingrow {
   display: flex;
   flex-direction: column;
   padding-left: 1em;

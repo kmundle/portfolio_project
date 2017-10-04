@@ -30,16 +30,22 @@ body {
   height: 100%
 }
 
-/* about at the top */
+/* about written at the top */
 h1{
   margin: 0;
-  width: 50%;
   font-family: 'Oxygen', sans-serif;
   color: darkgray;
   font-size: 5em;
   padding-top: .25em;
   display: block;
+}
+
+/* my name at the top + the social media icons together in a div */
+#paddingrow {
+  display: flex;
+  flex-direction: column;
   padding-left: 1em;
+
 }
 
 
@@ -52,7 +58,7 @@ h1{
   float: right;
   color: darkgray;
   padding-right: 1em;
-  width: 50%;
+
 }
 
 #localnavigation li {
@@ -83,6 +89,7 @@ nav ul li:hover, nav ul li:visited, nav ul li:link {
 }
 
 a {
+  font-family: 'Source Sans Pro', sans-serif;
   color: darkgray;
   text-decoration: none;
 }
@@ -96,5 +103,14 @@ a {
 /*body text*/
 p {
   display: block;
-  padding-left: 1em;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*contact page*/
+#email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2em;
+  font-size: 2em;
 }
