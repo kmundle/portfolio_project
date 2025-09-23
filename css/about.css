@@ -104,6 +104,7 @@ a {
 p {
   display: block;
   font-family: 'Source Sans Pro', sans-serif;
+  margin-bottom: 1em; /* Adds space below each paragraph */
 }
 
 /*contact page*/
