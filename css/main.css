@@ -94,38 +94,7 @@ h1{
   margin-bottom: 1em; /* Adds space below each paragraph */
 }
 
-/* my name at the top + the social media icons together in a div */
-#paddingrow {
-  display: flex;
-  flex-direction: column;
-  padding-left: 1em;
-  width: 50%;
-}
 
-/* social media icons */
-#socialmedia{
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: auto;
-  display: flex;
-  flex-direction: row;
-}
-
-.socicon-github:before {
-    content: "\e032";
-    color: white;
-}
-
-.socicon-facebook:before {
-    content: "\e028";
-    color: white;
-}
-
-.socicon-linkedin:before {
-    content: "\e04c";
-    color: white;
-}
 
 
 
